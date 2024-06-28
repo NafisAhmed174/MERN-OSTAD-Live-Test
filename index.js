@@ -7,13 +7,13 @@ function circuitPower(voltage , current){
 
 // 2) Write a JavaScript function named ‘findMaxNumber’ that takes an array of numbers as an argument and returns the maximum number in the array. If the array is empty, the function should return null.
 
-function findMaxNumber(...ar){
+function findMaxNumber(ar){
     if(ar.length == 0) return null;
     
     max = ar[0];
     
     for(i = 1; i < ar.length; i++){
-        if(max < ar[i]) mx = ar[i];
+        if(max < ar[i]) max = ar[i];
     }
     
     return max;
