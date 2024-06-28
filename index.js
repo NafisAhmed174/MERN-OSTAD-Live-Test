@@ -19,7 +19,7 @@ function findMaxNumber(ar){
     return max;
 }
 
-// Write a JavaScript function named ‘mergeArrays’ that takes two arrays as arguments and returns a new array.
+// 3)Write a JavaScript function named ‘mergeArrays’ that takes two arrays as arguments and returns a new array.
 
 function mergeArrays(ar1, ar2){
     ar3 = [];
@@ -33,6 +33,19 @@ function mergeArrays(ar1, ar2){
     return ar3;
 }
 
+// 4) Create a function ‘arrayValuesTypes’ that takes an array and returns the types of values (data types) in a new array. Ex- arrayValuesTypes([1, 2, "null", []]) ➞ ["number", "number", "string", "object"]
+
+function arrayValuesTypes(ar){
+    type = [];
+    for(i = 0; i < ar.length; i++){
+        type.push(typeof ar[i]);
+    }
+    return type;
+}
+
+// Testing Output
+
 console.log(circuitPower(110, 3));
 console.log(findMaxNumber([2, 4 ,1]));
 console.log(mergeArrays([1, 2, 3], [4, 5, 6, 7]));
+console.log(arrayValuesTypes([1, 2, "null", []]));
